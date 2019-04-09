@@ -1,6 +1,7 @@
 /* default css */
 body {
     font-family: 'Montserrat', sans-serif;
+    line-height: 1.7;
 }
 
 .h1,
@@ -24,7 +25,18 @@ h6 {
     color: #ffffff;
     font-weight: 400;
 }
-
+.btn-white{
+    padding: .75rem 1.5rem;
+    color: #000;
+    background-color: #ffffff;
+    border-color: #ffffff;
+    font-weight: 600;
+}
+.btn-white:hover {
+    color: #000;
+    background-color: #ffffff;
+    border-color: #2f9645;
+}
 /* Default title color */
 .default-color {
     color: #2f9645;
@@ -85,19 +97,43 @@ h6 {
     background-image: url(../../images/home/newsletter.jpg);
     background-size: cover;
 }
-.footerLink a{color: #333333; padding: 0 10px; font-weight: 600;}
+
+.footerLink a {
+    color: #333333;
+    padding: 0 10px;
+    font-weight: 600;
+}
+
+.call-to-action {
+    font-size: 1.5rem;
+    color: #77be43;
+    letter-spacing: 2px;
+    font-weight: 600;
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    z-index: 1;
+    background-color: transparent;
+}
+
 /**/
 /*navbar css*/
 .navbar {
     padding: 0;
 }
+
 .navbar-light .navbar-nav .nav-link {
     color: rgb(0, 0, 0);
     font-weight: 600;
 }
-.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link{
-	color: rgb(47, 150, 69);
+
+.navbar-light .navbar-nav .active>.nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show>.nav-link {
+    color: rgb(47, 150, 69);
 }
+
 /*navbar css ends*/
 
 /* All media queary for device greater then 992px*/
@@ -128,9 +164,9 @@ h6 {
 }
 
 /* All media queary for device less then 768px*/
-@media all (max-width: 48rem) {
+@media (max-width: 48rem) {
     .carousel-caption {
-        bottom: 20%;
+        bottom: 10%;
         right: 0;
         left: 0;
     }
@@ -138,5 +174,12 @@ h6 {
     .carousel-caption p {
         margin-top: 1.5rem;
 
+    }
+
+    .call-to-action {
+        position: relative;
+        text-align: center;
+        right: 0;
+        top: 0;
     }
 }
