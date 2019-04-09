@@ -20,27 +20,38 @@ h6 {
     font-weight: 400;
     line-height: 1.3;
 }
-a{color: #2f9645;}
-a:hover{color:#77be43;}
+
+a {
+    color: #2f9645;
+}
+
+a:hover {
+    color: #77be43;
+}
+
 .bold {
     font-weight: 600;
 }
+
 .white {
     color: #ffffff;
     font-weight: 400;
 }
-.btn-white{
+
+.btn-white {
     padding: .75rem 1.5rem;
     color: #000;
     background-color: #ffffff;
     border-color: #ffffff;
     font-weight: 600;
 }
+
 .btn-white:hover {
     color: #000;
     background-color: #ffffff;
     border-color: #2f9645;
 }
+
 .btn-green {
     color: #fff;
     background-color: #77be43;
@@ -48,11 +59,13 @@ a:hover{color:#77be43;}
     font-weight: 600;
 
 }
+
 .btn-green:hover {
     color: #fff;
     background-color: #2f9645;
     border-color: #2f9645;
 }
+
 /* Default title color */
 .default-color {
     color: #2f9645;
@@ -123,7 +136,7 @@ a:hover{color:#77be43;}
 .call-to-action {
     font-size: 1.5rem;
     color: #77be43;
-    
+
     font-weight: 600;
     position: absolute;
     right: 15px;
@@ -153,9 +166,7 @@ a:hover{color:#77be43;}
 /*navbar css ends*/
 
 /* All media queary for device greater then 992px*/
-@media (min-width: 62rem) {
-    
-}
+@media (min-width: 62rem) {}
 
 /*min width 640px*/
 @media (min-width: 40em) {
@@ -182,15 +193,22 @@ a:hover{color:#77be43;}
 
 /* All media queary for device less then 768px*/
 @media (max-width: 48rem) {
-    .h1, h1 {
-    font-size: 2.0rem;
-}
-.h2, h2 {
-    font-size: 1.75rem;
-}
-.h3, h3 {
-    font-size: 1.5rem;
-}
+
+    .h1,
+    h1 {
+        font-size: 2.0rem;
+    }
+
+    .h2,
+    h2 {
+        font-size: 1.75rem;
+    }
+
+    .h3,
+    h3 {
+        font-size: 1.5rem;
+    }
+
     .default-title:after {
         content: '';
         position: absolute;
@@ -200,6 +218,7 @@ a:hover{color:#77be43;}
         height: 1px;
         border-bottom: 1px solid #2f9645;
     }
+
     .carousel-caption {
         bottom: 10%;
         right: 0;
