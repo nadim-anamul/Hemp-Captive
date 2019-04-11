@@ -29,13 +29,22 @@ a:hover {
     color: #77be43;
 }
 
+img {
+    max-width: 100%;
+    width: auto;
+}
+
+button a:hover {
+    text-decoration: none;
+}
+
 .bold {
     font-weight: 600;
 }
 
 .white {
     color: #ffffff;
-   
+
 }
 
 .btn-white {
@@ -65,6 +74,81 @@ a:hover {
     background-color: #2f9645;
     border-color: #2f9645;
 }
+
+/* theme button */
+.themeBtn {
+    display: inline-block;
+    font-weight: 600;
+
+    text-transform: uppercase;
+    color: #FFF;
+    background: #77be43;
+    /*height: 48px;
+  padding: 0px;
+  width: 164px;*/
+    border-radius: 5px;
+    /*line-height: 46px;*/
+    position: relative;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    outline: none;
+    z-index: 2;
+    font-size: 14px;
+    letter-spacing: .28px;
+    text-align: center;
+    -webkit-transition: all 400ms linear 0s;
+    -o-transition: all 400ms linear 0s;
+    transition: all 400ms linear 0s;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    border: 0;
+}
+
+.themeBtn:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: #2f9645;
+    border-radius: 5px;
+    left: 0px;
+    top: 0px;
+    display: block;
+    -webkit-transform-origin: 0 50%;
+    -ms-transform-origin: 0 50%;
+    transform-origin: 0 50%;
+    -webkit-transition-property: -webkit-transform;
+    transition-property: -webkit-transform;
+    -o-transition-property: transform;
+    transition-property: transform;
+    transition-property: transform, -webkit-transform;
+    -webkit-transform: scalex(0);
+    -ms-transform: scalex(0);
+    transform: scalex(0);
+    -webkit-transition: all 400ms linear 0s;
+    -o-transition: all 400ms linear 0s;
+    transition: all 400ms linear 0s;
+}
+
+.themeBtn:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+.themeBtn:hover:before {
+    -webkit-transform: scaleY(1);
+    -ms-transform: scaleY(1);
+    transform: scaleY(1);
+    -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+    -o-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+    transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+}
+.btn-md {
+    padding: 11px 20px;
+    display: inline-block;
+}
+/* theme button */
 
 /* Default title color */
 .default-color {
@@ -119,26 +203,99 @@ a:hover {
     background-color: #fff;
     box-shadow: 0px 20px 18px 0px rgba(0, 0, 0, 0.15);
 }
-.contact-info{list-style: none;}
+
+.contact-info {
+    list-style: none;
+}
 
 /*background image banner*/
 .contact-us {
     background-image: url(../../images/background/contact-us.jpg);
     background-size: cover;
+    background-position: center;
 }
+
 .protect-green {
     background-image: url(../../images/background/protect-your-green.jpg);
     background-size: cover;
+    background-position: center;
 }
+
 .coverages-offere {
     background-image: url(../../images/background/coverages-offere.jpg);
     background-size: cover;
+    background-position: center;
 }
+
 .newsLetter {
     background-image: url(../../images/home/newsletter.jpg);
     background-size: cover;
+    background-position: center;
 }
+
 /*backgroun image banner*/
+/* Featured Box*/
+.featured-iteam .featuredImg {
+    position: relative;
+    overflow: hidden;
+    z-index: 3;
+}
+
+.featured-iteam .featuredImg:before {
+    content: "";
+    background: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    opacity: 0;
+    -webkit-transition: all 400ms linear 0s;
+    -o-transition: all 400ms linear 0s;
+    transition: all 400ms linear 0s;
+}
+
+.featured-iteam .featuredImg img {
+    max-width: 100%;
+    -webkit-transition: all 400ms linear 0s;
+    -o-transition: all 400ms linear 0s;
+    transition: all 400ms linear 0s;
+}
+
+.featured-iteam .featuredDescription {
+    box-shadow: 0px 4px 16px 0px rgba(204, 204, 204, 1);
+    padding: 20px;
+    text-align: center;
+}
+
+.featured-iteam .featuredDescription h3 {
+    font-size: 1.6rem;
+    
+}
+
+.featured-iteam .featuredDescription p {
+    font-size: 16px;
+    letter-spacing: .30px;
+    padding-bottom: 20px;
+}
+
+.featured-iteam .featuredDescription ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.featured-iteam:hover img {
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+.featured-iteam:hover:before {
+    opacity: 1;
+}
+
+/*Featured Box ends*/
 .footerLink a {
     color: #333333;
     padding: 0 10px;
@@ -178,7 +335,11 @@ a:hover {
 /*navbar css ends*/
 
 /* All media queary for device greater then 992px*/
-@media (min-width: 62rem) {}
+@media (min-width: 62rem) {
+    .featured-iteam .featuredDescription {
+    min-height: 362px;
+    }
+}
 
 /*min width 640px*/
 @media (min-width: 40em) {
