@@ -35,7 +35,7 @@ a:hover {
 
 .white {
     color: #ffffff;
-    font-weight: 400;
+   
 }
 
 .btn-white {
@@ -117,16 +117,28 @@ a:hover {
 
 .container {
     background-color: #fff;
-    box-shadow: 0px 11px 18px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 20px 18px 0px rgba(0, 0, 0, 0.15);
 }
+.contact-info{list-style: none;}
 
-
-
+/*background image banner*/
+.contact-us {
+    background-image: url(../../images/background/contact-us.jpg);
+    background-size: cover;
+}
+.protect-green {
+    background-image: url(../../images/background/protect-your-green.jpg);
+    background-size: cover;
+}
+.coverages-offere {
+    background-image: url(../../images/background/coverages-offere.jpg);
+    background-size: cover;
+}
 .newsLetter {
     background-image: url(../../images/home/newsletter.jpg);
     background-size: cover;
 }
-
+/*backgroun image banner*/
 .footerLink a {
     color: #333333;
     padding: 0 10px;
