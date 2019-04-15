@@ -144,10 +144,12 @@ button a:hover {
     -o-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
     transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
 }
+
 .btn-md {
     padding: 11px 20px;
     display: inline-block;
 }
+
 /* theme button */
 
 /* Default title color */
@@ -271,7 +273,7 @@ button a:hover {
 
 .featured-iteam .featuredDescription h3 {
     font-size: 1.6rem;
-    
+
 }
 
 .featured-iteam .featuredDescription p {
@@ -332,12 +334,38 @@ button a:hover {
     color: rgb(47, 150, 69);
 }
 
+@media (max-width: 62rem) {
+    div#navbarSupportedContent {
+        border: 1px solid #2f9645;
+        margin-top: 10px;
+    }
+
+    ul.navbar-nav.ml-auto {
+        
+        background: #77be43;
+        border: 1px solid #fff;
+        text-align: center;
+    }
+
+    li.nav-item {
+        border-top: 1px solid rgba(255, 255, 255, 1);
+        
+    }
+
+    .navbar-light .navbar-nav .nav-link {
+        color: #fff;
+    }
+    .navbar-light .navbar-nav .active>.nav-link {
+        color: rgb(77, 78, 88);
+    }
+}
+
 /*navbar css ends*/
 
 /* All media queary for device greater then 992px*/
 @media (min-width: 62rem) {
     .featured-iteam .featuredDescription {
-    min-height: 362px;
+        min-height: 362px;
     }
 }
 
