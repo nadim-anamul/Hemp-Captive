@@ -39,16 +39,16 @@
                             <div class="collapse navbar-collapse mt-lg-3" id="navbarSupportedContent">
                                 <ul class="navbar-nav ml-auto">
                                     <li class="nav-item">
-                                        <a title="Hemp Captive" class="nav-link " href="#">Home</a>
+                                        <a title="Hemp Captive" class="nav-link " href="index.html">Home</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">Protect Your Green</a>
+                                        <a class="nav-link" href="protect-your-green.html">Protect Your Green</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">Coverages Offered</a>
+                                        <a class="nav-link" href="coverages-offered.html">Coverages Offered</a>
                                     </li>
                                     <li class="nav-item active">
-                                        <a class="nav-link " href="#">Contact</a>
+                                        <a class="nav-link " href="contact-us.html">Contact</a>
                                     </li>
                                 </ul>
                             </div>
@@ -62,7 +62,7 @@
                 <div class="row">
                     <div class="col text-center">
                         <h1 class="bold white">Protect Your Green From Seed to Sale</h1>
-                    <h2 class="bold white">Outdor Crop Insurance for hemp</h2>
+                    <h2 class="bold white">Outdor Crop Insurance for Hemp</h2>
                     </div>
                     
                 </div>
@@ -86,7 +86,8 @@
                     </div>
                     <div class="col-md-5">
                         <h3 class="mt-5 mb-4">Contact From:</h3>
-                        <form>
+                        <div id="form-messages" class="mb-4 success"></div>
+                        <form id="ajax-contact" method="post" action="mailer.php">
                             <div class="form-group row">
                                 <div class="col-md-12">
                                     <input type="text" class="form-control" name="firstName" required placeholder="first name">
@@ -99,12 +100,12 @@
                             </div>
                             <div class="form-group row">
                                 <div class="col-md-12">
-                                    <input type="password" class="form-control" class="password" required placeholder="phone">
+                                    <input type="text" class="form-control" name="phone" class="text" required placeholder="phone">
                                 </div>
                             </div>
                             <div class="form-group row">
                                 <div class="col-md-12">
-                                    <input type="email" class="form-control" name="email" required placeholder="Email">
+                                    <input type="email" class="form-control" name="email" required placeholder="email">
                                 </div>
                             </div>
                             <div class="form-group row">
@@ -143,10 +144,10 @@
                 <div class="row pt-5 pb-2">
                     <div class="col text-center">
                         <ul class="list-inline footerLink">
-                            <li class="list-inline-item"><a href="#">Home</a></li>
-                            <li class="list-inline-item"><a href="#">Protect Your Green</a></li>
-                            <li class="list-inline-item"><a href="#">Convergaes Offered</a></li>
-                            <li class="list-inline-item"><a href="#">Contact</a></li>
+                            <li class="list-inline-item"><a href="index.html">Home</a></li>
+                            <li class="list-inline-item"><a href="protect-your-green.html">Protect Your Green</a></li>
+                            <li class="list-inline-item"><a href="coverages-offered.html">Convergaes Offered</a></li>
+                            <li class="list-inline-item"><a href="contact-us.html">Contact</a></li>
                         </ul>
                     </div>
                 </div>
@@ -173,6 +174,7 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="./inc/app.js"></script>
 </body>
 
 </html>
